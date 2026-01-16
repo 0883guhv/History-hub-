@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>History Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="hero">
+    <h1 class="fade-in">History, but make it interesting.</h1>
+    <p class="fade-in delay">Created by your History Ambassador</p>
+
+    <div class="buttons">
+      <a href="#week">This Week in History</a>
+      <a href="#quiz">1-Minute Quiz</a>
+      <a href="#poll">Poll</a>
+    </div>
+  </header>
+
+  <section id="week" class="section">
+    <h2>This Week in History</h2>
+    <div class="card">
+      <h3>1961 – South Africa leaves the Commonwealth</h3>
+      <p>This followed growing international criticism of apartheid.</p>
+    </div>
+    <div class="card">
+      <h3>1949 – People’s Republic of China founded</h3>
+      <p>Mao Zedong proclaimed the PRC after the Chinese Civil War.</p>
+    </div>
+  </section>
+
+  <section id="quiz" class="section">
+    <h2>1-Minute Quiz</h2>
+    <p>Who led the Chinese Communist Party during the Long March?</p>
+    <button onclick="checkAnswer('wrong')">Sun Yat-sen</button>
+    <button onclick="checkAnswer('correct')">Mao Zedong</button>
+    <button onclick="checkAnswer('wrong')">Chiang Kai-shek</button>
+    <p id="quizResult"></p>
+  </section>
+
+  <section id="poll" class="section">
+    <h2>Quick Poll</h2>
+    <p>Was the Dawes Plan successful?</p>
+    <button onclick="vote('Yes')">Yes</button>
+    <button onclick="vote('No')">No</button>
+    <p id="pollResult"></p>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
